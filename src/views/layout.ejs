@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>" />
+		<meta name="keywords" content="<%= keywords %>" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <% if(typeof styles !== undefined) { %>
+			<% styles.forEach(style => { %>
+			<link rel="stylesheet" href="/assets/css/<%=style%>"></script>
+			<% }) %>
+    <%}%>
+  </head>
+  <body>
+		<%- include("./layouts/header.ejs") %>
+    <main class="body">
+      <%- body %>
+    </main>
+    <footer>
+      footer
+		</footer>
+		<script async src="/assets/js/general.js"></script>
+    <% if(typeof scripts !== undefined) { %> <% scripts.forEach(script => { %>
+    <script async src="/assets/js/<%=script%>"></script>
+    <% }) %> <%}%>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@media screen and (min-width: 700px) {
+  .login {
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    background: url(/assets/images/bgi.svg) no-repeat center right fixed;
+    /* For WebKit*/
+    /* Mozilla*/
+    /* Opera*/
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.login .login-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 400px;
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .login .login-content {
+    margin-top: 5em;
+  }
+}
+
+.login .login-content .title {
+  text-align: center;
+  color: #5b4c77;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .login-content .title h1 {
+  max-width: 90px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #d36bb5;
+}
+
+.login .login-content p {
+  margin: 3em auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login .login-content input {
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.432);
+  background: transparent;
+  outline: none;
+  line-height: 2em;
+  padding: .2em 0;
+  font-size: 1.3em;
+}
+
+.login .login-content .login-button {
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fe6dab), to(#8e83f9));
+  background-image: linear-gradient(to bottom right, #fe6dab, #8e83f9);
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .login-content .login-button:hover {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fa3389), to(#513dffc5));
+  background-image: linear-gradient(to bottom right, #fa3389, #513dffc5);
+}
+
+.login .login-content .login-button:active {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff66a8), to(#8173ffc5));
+  background-image: linear-gradient(to bottom right, #ff66a8, #8173ffc5);
+}
+
+.login .login-content .login-button i {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=login.css.map */
