@@ -1,0 +1,44 @@
+
+.dashboard-layout {
+    min-height: 100vh;
+    display: flex;
+    .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .side-bar {
+        min-height: 100vh;
+        background: #fff;
+        position: sticky;
+        top: 0px;
+        .cus-menu-height {
+            position: sticky;
+            top: 0px;
+            min-height: 100vh;
+        }
+    }
+    .trigger:hover {
+      color: #1890ff;
+    }
+    .logo {
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 16px;
+    }
+    .hide-on-mobile {
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .sticky-top-left {
+      position: sticky;
+      top: 100px;
+      left: 0px;
+    }
+    .main-container {
+      flex: 1;
+    }
+  }
